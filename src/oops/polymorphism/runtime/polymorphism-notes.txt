@@ -137,7 +137,16 @@ person = new Org();
 		void show() {
 		    // Custom implementation
 		}
+-----------------------------------------------------------------------------------------------------------------
+	Task:-
 
-		
+
+
+				RbiBank(int getRoi()--0)
+				  |
+	-------------------------------------------------------------------------
+	|			  |			|			|
+    AxisBank	 		SbiBank		  KotakBank  		    HdfcBank	
+int getRoi()--12              int getRoi()--8    int getRoi()--12          int getRoi()---11	
 		
 		
