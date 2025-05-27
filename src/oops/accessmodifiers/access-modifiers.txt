@@ -1,0 +1,67 @@
+				Type of Modifiers
+				------------------
+	1) Access-Modifiers			2) Non-AccessModifiers
+	----------------------			----------------------
+	--> private				--> final,strictfp,static,abstract,volatile
+	--> default
+	--> protected
+	--> public
+
+
+
+Final---Non Access Modifiers
+--------
+	1) local variables
+	2) dm's
+	3) methods
+	4) class	
+------------------------------------------------------------------------------------------------------------------------------------------
+Access-Modifiers:-
+-----------------
+	1. private---within class
+
+	2. default---package level private--SAME package
+
+	3. protected--can access  package level + outside Package by IS-A relationship
+
+	4. public----can access everywhere
+
+--------------------------------------------------------------------------------------------------		
+		   SAME PACKAGE   SAME PACKAGE	  SAME PACKAGE	 OUTSIDE PACKAGE OUTSIDE PACKAGE|  	
+		   SAME-CLASS  	  CHILD-CLASS 	  OTHER-CLASS 	 CHILD-CLASS 	 OTHER-CLASS	| 
+--------------------------------------------------------------------------------------------------
+private		|     YES	|    NO		|    NO		|     NO	|     NO 	|   
+--------------------------------------------------------------------------------------------------
+default		|     YES	|    YES	|    YES	|     NO	|     NO	|
+--------------------------------------------------------------------------------------------------
+protected	|     YES	|    YES	|    YES	|  YES(IS-A)    |     NO	|
+--------------------------------------------------------------------------------------------------
+public		|     YES	|    YES	|    YES	|    YES	|     YES	|
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
