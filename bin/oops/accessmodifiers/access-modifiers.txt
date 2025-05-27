@@ -2,7 +2,7 @@
 				------------------
 	1) Access-Modifiers			2) Non-AccessModifiers
 	----------------------			----------------------
-	--> private				--> final,strictfp,static,abstract,volatile
+	--> private				--> static,final,abstract,synchronized,volatile,transient,native,strictfp,default--Interface Methods
 	--> default
 	--> protected
 	--> public
