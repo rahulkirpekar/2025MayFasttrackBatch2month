@@ -20,14 +20,22 @@ Example:-			Example:-
 	-------------------------------------------------------------------------
 	|			|			|			|			
        Home		    PublicPlace		      School		       Org	
+	|			|			|			|				
 void getBehave()      void getBehave()		void getBehave()	void getBehave()	
 {		      {				{			{	
      Son/Daughter	  Citizen			Student			Employee
 }		      }				}			}
 
+void getMovieOnTime() void getPublicEvents()    void getResult()	void getSalary()
+{		     {				{			{
+	
+}		     } 				}			} 	
+
+
+
 
 Person person = new Home();
-       person.getBehave();
+person.getBehave();
 
 
 	person = new PublicPlace();
@@ -137,7 +145,16 @@ person = new Org();
 		void show() {
 		    // Custom implementation
 		}
+-----------------------------------------------------------------------------------------------------------------
+	Task:-
 
-		
+
+
+				RbiBank(int getRoi()--0)
+				  |
+	-------------------------------------------------------------------------
+	|			  |			|			|
+    AxisBank	 		SbiBank		  KotakBank  		    HdfcBank	
+int getRoi()--12              int getRoi()--8    int getRoi()--12          int getRoi()---11	
 		
 		

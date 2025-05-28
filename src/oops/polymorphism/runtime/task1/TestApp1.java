@@ -4,6 +4,37 @@ import java.util.Scanner;
 
 public class TestApp1 
 {
+	public static void getExecuteByProfile(Person person) // Home
+	{
+		person.getBehave();// Home--Object
+		
+//		person.getMovieOnTime();// C.E
+		
+		// Downcasting
+//		Home homeMember = (Home)person;
+//		homeMember.getMovieOnTime();
+		
+		if (	person instanceof School) 
+		{
+			School student = (School) person;
+			student.getResult();
+			
+		}else if (	person instanceof Home) 
+		{
+			Home home = (Home) person;
+			home.getMovieOnTime();
+		}
+		else if (	person instanceof PublicPlace) 
+		{
+			PublicPlace citizen = (PublicPlace) person;
+			citizen.getPublicEvents();
+		}
+		else if (	person instanceof Org) 
+		{
+			Org employee = (Org) person;
+			employee.getSalary();
+		}
+	}
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
@@ -21,24 +52,28 @@ public class TestApp1
 			case 1: 
 					// Upcasting--[Parent reference  = child Object]
 					person = new Home();
-					person.getBehave();
+//					person.getBehave();
+					
+					getExecuteByProfile(person);
 					break;
 					
 			case 2: person = new PublicPlace();
-					person.getBehave();
+//					person.getBehave();
+					
+					getExecuteByProfile(person);
 					break;
 					
 			case 3: person = new School();
-					person.getBehave();
+//					person.getBehave();
+					
+					getExecuteByProfile(person);
 					break;
 					
 			case 4: person = new Org();
-					person.getBehave();
+//					person.getBehave();
+					
+					getExecuteByProfile(person);
 					break;
 		}
 	}
 }
-
-
-
-

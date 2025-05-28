@@ -7,4 +7,8 @@ public class Org extends Person
 	{
 		System.out.println("Org--getbehave()---Employee");
 	}
+	public void getSalary() 
+	{
+		System.out.println("Org--getSalary()---Employee");
+	}
 }

@@ -20,14 +20,22 @@ Example:-			Example:-
 	-------------------------------------------------------------------------
 	|			|			|			|			
        Home		    PublicPlace		      School		       Org	
+	|			|			|			|				
 void getBehave()      void getBehave()		void getBehave()	void getBehave()	
 {		      {				{			{	
      Son/Daughter	  Citizen			Student			Employee
 }		      }				}			}
 
+void getMovieOnTime() void getPublicEvents()    void getResult()	void getSalary()
+{		     {				{			{
+	
+}		     } 				}			} 	
+
+
+
 
 Person person = new Home();
-       person.getBehave();
+person.getBehave();
 
 
 	person = new PublicPlace();

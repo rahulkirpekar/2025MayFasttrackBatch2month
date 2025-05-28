@@ -7,4 +7,8 @@ public class Home extends Person
 	{
 		System.out.println("Home--getbehave()---Son/Daughter ");
 	}
+	public void getMovieOnTime() 
+	{
+		System.out.println("Home : getMovieOnTime()"); 
+	}
 }

@@ -7,4 +7,8 @@ public class PublicPlace extends Person
 	{
 		System.out.println("PublicPlace--getBehave()---Citizen ");
 	}
+	public void getPublicEvents() 
+	{
+		System.out.println("PublicPlace---getPublicEvents() ");
+	}
 }
