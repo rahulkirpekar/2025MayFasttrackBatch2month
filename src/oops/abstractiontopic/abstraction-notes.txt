@@ -1,0 +1,120 @@
+ Definition of Abstraction (in Java):
+
+Abstraction is one of the fundamental OOP (Object-Oriented Programming) principles.
+
+===> It refers to hiding the internal implementation details and showing only the essential features 
+of an object.
+
+In Java, abstraction is achieved using:
+
+* Abstract classes
+* Interfaces
+
+Abstraction:-
+-------------
+
+	1. 0% to 100%			2. 100%(Pure Abstraction)
+	--------------			--------------------------
+	Abstract class			interface
+
+Abstract class:-
+----------------
+
+	abstract class A
+	{
+		1. Dm's
+		2. constructor
+		3. methods
+			1. abstract methods
+			public abstract void test1();
+
+			2. non-abstract methods
+			public void test2()
+			{
+
+			}
+	}
+	abstract class B extends A
+	{
+		void test1()
+		{
+
+		}
+		public abstract void test3();
+	}
+	class C extends B
+	{
+
+	}
+---
+
+ Features of Abstract Class (in Java):
+
+1. Declared with abstract keyword:
+
+   * Syntax: abstract class ClassName { }
+
+2. Cannot be instantiated:
+
+   * You cannot create objects of an abstract class directly.
+
+3. Can have abstract methods:
+
+   * Abstract methods do not have a body.
+   * Must be implemented by child (sub) classes.
+   * Syntax: abstract void methodName();
+
+4. Can have concrete (non-abstract) methods:
+
+   * Abstract classes can contain fully defined methods with body.
+
+5. Can have constructors and static methods:
+
+   * Abstract classes can define constructors, static blocks, and static methods.
+
+6. Can have member variables:
+
+   * Like any class, it can have fields (variables) with any access modifier.
+
+7. Used for partial abstraction:
+
+   * Can provide default behavior and force subclasses to implement specific methods.
+
+8. Supports inheritance:
+
+   * A class can extend only one abstract class (since Java supports single inheritance).
+
+---
+
+ Example:
+
+java
+abstract class Animal {
+    // abstract method
+    abstract void makeSound();
+
+    // concrete method
+    void breathe() {
+        System.out.println("Breathing...");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Barks");
+    }
+}
+
+
+In this example:
+
+* Animal is an abstract class.
+* makeSound() is an abstract method, and must be implemented in the subclass.
+* breathe() is a concrete method, inherited as-is.
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+package oops.abstractiontopic.aclass.task1;
+
+public class School extends Person
+{
+	 @Override
+	public void getBehave() 
+	{
+		System.out.println("School--getbehave()---Student ");
+	}
+	public void getResult() 
+	{
+		System.out.println("School--getResult()---Student ");
+	}
+}

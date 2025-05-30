@@ -1,4 +1,4 @@
-package oops.polymorphism.runtime.task1;
+package oops.abstractiontopic.aclass.task1;
 
 import java.util.Scanner;
 
