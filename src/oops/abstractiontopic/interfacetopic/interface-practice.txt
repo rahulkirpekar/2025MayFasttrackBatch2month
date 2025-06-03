@@ -1,0 +1,56 @@
+Notification Delivery System
+******************************
+You are building a system that sends notifications to users through different channels:
+
+1. Email
+
+2. SMS
+
+3. Push Notification
+
+==> Each notification type implements a common interface to send messages, but the sending logic differs per channel.
+
+==> At runtime, based on user preferences or system configuration, the program must decide 
+    which notification type to use without changing the core code.
+
+🎯 The Problem:
+
+===> How to design the system so that it can send notifications via different channels at runtime?
+
+===> How to make sure new notification types can be added without modifying existing code?
+
+===> How to use runtime polymorphism to select the notification channel dynamically?
+
+
+			Notification [void send(String message);]
+			    |
+	------------------------------------------
+	|		    |			|			 
+EmailNotification    SMSNotification      PushNotification  
+send(String message) send(String message) send(String message)   
+	|		    |			|			 
+"Sending Email	     "Sending SMS 	   "Sending Push Notification 
+with message:"	     with message:" 	    with message:"	 	
+
+NotificationService
+---------------------- 
+	public void notifyUser(Notification notification, String message) 
+	{
+        	notification.send(message);  // Polymorphic call at runtime
+        }
+
+	PSVM()
+	{
+		 NotificationService service = new NotificationService();
+
+	        Notification email = new EmailNotification();
+        	Notification sms = new SMSNotification();
+	        Notification push = new PushNotification();
+
+	        // Decide notification type at runtime (could be user preference)
+        	service.notifyUser(email, "Your order has been shipped!");
+        	service.notifyUser(sms, "Your OTP is 1234");
+        	service.notifyUser(push, "You have a new message");
+	}
+
+
