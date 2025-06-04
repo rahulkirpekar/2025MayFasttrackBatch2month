@@ -1,0 +1,100 @@
+class---[string operation methods]
+  |
+String(Multiple Characters)---char array
+
+String		StringBuilder		StringBuffer
+---------------------------------------------------------------------------------------------------------
+
+		ways to operation on String type Data
+		--------------------------------------
+
+1. Immutable way					2. Mutable way
+-----------------					-----------------
+    |							     |
+1.String						1. StringBuilder
+							2. StringBuffer(MultiThreadding)
+
+String - Special class
+
+1. Immutable way[String]:-
+--------------------------
+
+ Ways to create string object:-
+ -------------------------------
+	1. By String literal way [RAM--->HEAP---->[SCP--String Constant Pool]--->verify String-objects]:-
+	-------------------------------------------------------------------------------------------------
+
+		String name1 = "royal";
+		String name2 = "royal";
+		String name3 = "technosoft";
+		String name4 = name1;
+
+		String name5 = name1.concate(name3);
+		name3 = "IIT";
+Object Equality:-
+-----------------
+			==(reference Baseed)		(values Based)--[.equals method]
+			-------------------		----------------------------------
+		1. SOP(name1==name2);//true		1. SOP(name1.equals(name2));// true
+		2. SOP(name1==name3);//false		2. SOP(name1.equals(name2));// false
+		3. SOP(name1==name4);//true		2. SOP(name1.equals(name4));// true
+
+						
+	2. By 'new' keyword way[RAM--->HEAP] :-
+	-----------------------------------------
+		String name1 = new String("royal");
+		String name2 = new String("technosoft");
+		String name3 = new String("IIT");
+		String name4 = new String("royal");
+		String name5 = new String("technosoft");
+		String name6 = name1;
+	
+Object Equality:-
+-----------------
+			==(reference Baseed)		(values Based)--[.equals method]
+			-------------------		----------------------------------
+		1. SOP(name1==name2);//false		1. SOP(name1.equals(name2));// false
+		2. SOP(name1==name3);//false		2. SOP(name1.equals(name3));// false
+		3. SOP(name1==name4);//false		3. SOP(name1.equals(name4));// true
+		4. SOP(name1==name6);//true		4. SOP(name1.equals(name6));// true
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
