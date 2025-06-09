@@ -1,0 +1,148 @@
+Exception:- Generate Abnormal Scenario---raise exception---Code Crashed
+------------
+		Statement--1
+		Statement--2
+		Statement--3
+		Statement--4
+		Statement--5
+		10 / 0;// map----Built-Inclass
+		Statement--6
+		Statement--7
+		Statement--8
+		Statement--9
+		Statement--10
+	raise exception by scenario----Code Crashed
+
+
+
+1. ArithmeticException:-
+---------------------------
+
+		int ans = 10 / 0;
+
+2. ArrayIndexOutpufBoundException:-
+-----------------------------------
+
+	int a[] = new int[5];
+
+	a[15]  = 10;// raise excception ArrayIndex...
+
+
+3. StringIndexoutofBoundException
+---------------------------------
+	//		01234
+	String name =  "royal";
+
+	SOP(name.charAt(5));
+
+4. NullPointerException:--
+------------------------------
+	String name = null;
+
+	SOP(name.length());// NullpointerException
+
+5. NumberFormateException:--
+------------------------------
+	String value = "1t2a3";
+	int no = Integer.parseInt(value);  //NumberFormateException
+
+6. CLassCastException:--
+------------------------------
+		A
+		|
+	------------------
+	|		|
+	B		C
+
+	A obj = new B();
+
+	C c = (C)obj;// ClasscastException
+
+
+
+
+				Type of Exception
+				------------------
+	1. Check Exception			2. UnCheck Exception
+	--------------------			--------------------
+	compiletime exception			Runtime exception
+		|					|
+	     Compiler				       JVM
+--------------------------------------------------------------------------------------------------------------
+
+			   Hierarchy of Exception
+			   -----------------------
+					
+				Throwable(C)
+				    |
+				Exception(C)
+				    |
+	-----------------------------------------------------------------
+	|--checked							|--Unchecked
+--IOException							RuntimeException(C)	
+--SQLException								|
+--FileNOtFoundException					---ArithmeticException
+							---StringIndexoutofBoundException
+							---NullPointerException
+							---NumberFormateException
+							---ClassCastException
+							---ArrayIndexoutofBoundException
+							.....
+
+
+
+
+
+
+
+
+Exception Handling:-
+---------------------
+
+	try
+	{
+
+	}
+	catch()
+	{
+
+	}
+
+
+
+
+
+
+
+  	
+
+
+		
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
