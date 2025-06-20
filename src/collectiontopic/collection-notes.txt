@@ -1,0 +1,92 @@
+Array Limitations:-
+-------------------
+
+	int a[] = new int[5];
+
+	1. SIZE
+	2. TYPE
+
+Collection Framework:-
+-----------------------
+			Hierarchy of Collection
+			-----------------------
+
+				Iterable(I)------------------------------------------------------
+				  |								|
+				Collection(I)							|
+				  |								|
+				  |Data--value							|
+				  |								|
+	----------------------------------------------------------				|
+	|			  |				|				|
+      List(I)			Set(I)			     Queue(I)			       Map(Key,Value)	
+	|			  |				|				|
+ AbstractList(AC)	    AbstractSet(AC)		  AbstractQueue(AC)		  AbstractMap(AC)	
+	|			  |				|				|
+--ArrayList(C)		---HashSet(C)			---PriorityQueue(C)		---HashMap(C)
+--LinkedList(C)		---LinkedHashSet(C)						---LinkedHashMap(C)
+--Vector(C)		---TreeSet(C)							---TreeMap(C)
+------------------------------------------------------------------------------------------------------------------------------
+
+List(I) Features:-
+-------------------
+
+	1. Ordered Collection
+	2. Allows Duplicate Values
+	3. Indexed Basedd Access(get(index)---value)
+
+		0	1	2	3	4<-----index	
+		10	20	30	40	50<----value
+
+	4.Multiple Implementations
+	5. null values store into list object
+	6. Rich API[Methods]
+	7. Support Iterations
+		1. simple for loop
+		2. foreach loop		
+		3. By Iteratorr way
+		4. By ListIteratorr way
+		5. By Stream API
+	8.Type safe with Generics
+	9. Not Threadsafe
+
+
+ArrayList(I) Features:-
+------------------------
+
+	1. Dynamic Array
+	2. Resizable
+	3. Maintain Insertion order
+	4. Allow Duplicate Values
+	5. Random Access Values(get(index))
+	6. Iterator and ListIterator	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
