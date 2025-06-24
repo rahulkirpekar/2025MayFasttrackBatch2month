@@ -4,7 +4,38 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-import collectiontopic.listtopic.Student;
+
+//Collection(I)		Collections(Class)
+//
+//list(String/Integer/Float/Long/Double)	
+//
+//List
+//ArrayList--list(strings)----Collections.sort(list);//Sorting List--->Data
+//LinkedList
+//Vector
+//-----------------------------
+//Set
+//HashSet
+//LinkedHashSet
+//TreeSet(Sorting)
+//-----------------------------
+//Queue
+//PriorityQueue
+//-----------------------------
+//Map
+//HashMap
+//LinkedHashMap
+//TreeMap(Sorting)
+
+
+
+//Sorting Techniques:-
+//--------------------
+//
+//1. Comparable(I)			2. Comparator(I)
+//----------------			----------------
+//compareTo(Object obj)		  compare(Object obj1,Object obj2)	
+
 
 public class TestApp1 
 {
@@ -32,16 +63,35 @@ public class TestApp1
 			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks());
 		}
 		
-		Collections.sort(list);
+		Collections.sort(list, new MarksWiseStudentComparator());
 		
 		System.out.println("After MarksWise Sorting : ");
 		itr = list.iterator();
-		
 		while(itr.hasNext()) 
 		{
 			Student s = itr.next();
 			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks() );
 		}
-	}
+		
+		Collections.sort(list, new StdWiseStudentComparator());
+		
+		System.out.println("After StdWise Sorting : ");
+		itr = list.iterator();
+		while(itr.hasNext()) 
+		{
+			Student s = itr.next();
+			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks() );
+		}
+		
+		Collections.sort(list, new NameWiseStudentComparator());
+		
+		System.out.println("After NameWise Sorting : ");
+		itr = list.iterator();
+		while(itr.hasNext()) 
+		{
+			Student s = itr.next();
+			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks() );
+		}
 
+	}
 }
