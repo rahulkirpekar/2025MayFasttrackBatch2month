@@ -1,0 +1,58 @@
+Thread----->Process---->Sub-process---->[light weight]
+
+Single Task----MultiProcess---process--Multiple Thread
+------------------------------------------------------------------------------------
+
+Resources = [Processor + RAM + SSD + HDD]
+
+Time	
+ |		A	B	C---class
+8-9		AA	BB	CC
+------------------------------------------------------------------------------------
+
+Ways to create Thread in Java
+-------------------------------
+
+	1. By extending Thread class
+	2. By implementing Runnable interface
+-------------------------------------------------------------------------------------------
+
+Thread LifeCycle:-
+-------------------
+
+	1. Start
+	     |	
+	2. Runnable<----------------------|
+	     |				  |
+	3. Running--------sleep,wait----[Non-Runnable]
+	     |		
+	4. Terminate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
