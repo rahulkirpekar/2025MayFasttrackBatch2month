@@ -1,0 +1,53 @@
+	CREATE TABLE Student
+	(
+		rno int AUTO_INCREMENT primary key,
+		name varchar(50),
+		std int,
+		marks int
+	);
+-----------------------------------------------------------------------------------------------------
+
+Dao --Data Access Object
+---------------------
+	Student(Table)
+	  |	
+	StudentDao
+		--insert
+		--update
+		--delete
+		--select
+
+
+	1. Statement:-
+	---------------
+
+		int--RowsAffected
+		|
+	     executeUpdate()	     executeQuery()---Multiple Rows---ResultSet	
+		  |			 |	
+		insert			select	
+		update	
+		delete
+
+	2. PreparedStatement:-
+	------------------------
+	
+		int--RowsAffected
+		|
+	     executeUpdate()	     executeQuery()---Multiple Rows---ResultSet	
+		  |			 |	
+		insert			select	
+		update	
+		delete
+
+	3. CallableStatement:-
+	------------------------
+
+		Procedures
+		Triggers
+		function
+
+
+
+
+
