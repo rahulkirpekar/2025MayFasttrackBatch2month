@@ -1,0 +1,99 @@
+Below is a real-time problem statement and JDBC CRUD project using a single table only — perfect for practicing simple JDBC operations.
+
+---
+
+    ✅ Project Title: Employee Record Management System
+
+---
+
+    📌 Problem Statement:
+
+In many small organizations, maintaining employee records such as name, designation, salary, and department is often done manually or in spreadsheets. This can lead to data inconsistency and loss. A simple Java application is required to perform CRUD operations on a single table to store and manage employee records.
+
+---
+
+    🎯 Objective:
+
+Build a console-based Java application using JDBC to manage employee records using a single table in a MySQL database.
+
+---
+
+    🗂️ Modules / Functional Requirements (CRUD):
+
+1. Add New Employee
+
+   * Input: Name, Department, Designation, Salary
+   * Operation: Insert into the employee table
+
+2. View Employee(s)
+
+   * View all employees
+   * View by employee ID
+
+3. Update Employee
+
+   * Update salary or designation of an employee by ID
+
+4. Delete Employee
+
+   * Delete record by employee ID
+
+---
+
+    🗄️ Database Table Design (MySQL):
+
+   # `employee` Table
+
+sql
+CREATE TABLE employee (
+  emp_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  department VARCHAR(50),
+  designation VARCHAR(50),
+  salary DOUBLE
+);
+
+
+---
+
+    🧪 Sample Data:
+
+sql
+INSERT INTO employee (name, department, designation, salary)
+VALUES 
+('Rahul Kirpekar', 'Training', 'Senior Trainer', 65000),
+('Shivani Patel', 'HR', 'HR Manager', 55000),
+('Amit Shah', 'IT', 'Software Engineer', 60000);
+
+
+---
+
+    🛠️ Technology Stack:
+
+* Language: Core Java
+* Database: MySQL
+* Connectivity: JDBC (using `Connection`, `Statement`, `PreparedStatement`, `ResultSet`)
+* IDE: Eclipse / IntelliJ
+* Build Tool: Not required for simple apps
+
+---
+
+    📦 Recommended Java Class Structure:
+
+
+EmployeeCRUD/
+├── DBConnection.java
+├── Employee.java
+├── EmployeeDAO.java
+├── Main.java
+
+
+---
+
+    📘 Example Operations:
+
+* Add: Insert employee “Ravi Kumar”, “Marketing”, “Executive”, `₹35000`
+* View: List all or fetch employee with ID = 2
+* Update: Change salary of ID 1 to `₹70000`
+* Delete: Remove record with ID = 3
+
